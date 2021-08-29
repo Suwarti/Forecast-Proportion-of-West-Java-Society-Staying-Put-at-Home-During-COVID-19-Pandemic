@@ -64,4 +64,16 @@ by Suwarti
 - The dataset has 9 columns. To forecast proportion of West Java society staying put at home, we just need three columns. These columns are date stamp, region name, and positive proportion of users staying put within a single location. Therefore we only analyze three columns and we remove another columns.
 - Format of column date stamp is object. Therefore we have to convert to datetime format.
 
+# Exploratory Data Analysis 
+Distribution of the data
+
+![jds2](https://user-images.githubusercontent.com/75175081/131247362-4326f8d7-a456-4e64-8f22-5e5517023734.png)
+
+From the graph, we can see that the data is non-linear trends. And there is an extreme pattern in the first 3 months of the data.
+
+# Modeling Data: Prophet
+
+- Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.
+- From exploratory data analysis, we can see that the data is non-linear trends. Therefore we choose the Prophet model.
+
 
