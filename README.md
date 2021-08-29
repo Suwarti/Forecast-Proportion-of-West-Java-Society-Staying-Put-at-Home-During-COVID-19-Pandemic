@@ -59,4 +59,9 @@ by Suwarti
   * Python Version: 3.7.6
   * Packages: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Statsmodels, Itertools, and Fbprophet.
 
+# Data Cleansing 
+- The data contains region name of society from all over the world. However we only analyze data from the West Java society. Therefore we remove another region from our analysis.
+- The dataset has 9 columns. To forecast proportion of West Java society staying put at home, we just need three columns. These columns are date stamp, region name, and positive proportion of users staying put within a single location. Therefore we only analyze three columns and we remove another columns.
+- Format of column date stamp is object. Therefore we have to convert to datetime format.
+
 
