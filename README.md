@@ -34,5 +34,25 @@ by Suwarti
 - This case has some Objective Statement using the data:
  * Build model to forecast proportion of West Java society staying put at home in the next 2 weeks.
  * Recommendation to treat West Java society based on forecasting model.
+ 
+# Data Understanding
+
+- Source Data: https://data.humdata.org/dataset/movement-range-maps
+- These data sets are intended to inform researchers and public health experts about how populations are responding to physical distancing measures. In particular, there are two metrics, Change in Movement and Stay Put, that provide a slightly different perspective on movement trends. Change in Movement looks at how much people are moving around and compares it with a baseline period that predates most social distancing measures, while Stay Put looks at the fraction of the population that appear to stay within a small area during an entire day.
+- Data of Movement Range Maps from 01 March 2020 to 31 December 2020.
+- The dataset has 9 columns and 5,229,342 rows.
+- Data is provided in one global tab-delimited text file. 	
+
+- Data Dictionary:
+  * ds: Date stamp for movement range data row in YYYY-MM-DD form
+  * country: Three-character ISO-3166 country code
+  * polygon_source: Source of region polygon, either “FIPS” for U.S. data or “GADM” for global data
+  * polygon_id: Unique identifier for region polygon, either numeric string for U.S. FIPS codes or alphanumeric string for GADM regions
+  * polygon_name: Region name
+  * all_day_bing_tiles_visited_relative_change: Positive or negative change in movement relative to baseline
+  * all_day_ratio_single_tile_users: Positive proportion of users staying put within a single location
+  * baseline_name: When baseline movement was calculated pre-COVID-19
+  * baseline_type: How baseline movement was calculated pre-COVID-19
+
 
 
