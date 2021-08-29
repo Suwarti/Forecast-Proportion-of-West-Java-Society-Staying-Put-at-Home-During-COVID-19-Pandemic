@@ -99,5 +99,25 @@ From references that I read, period is usually one half from the horizon. Theref
 
 RMSE of our model is 0.02. Meanwhile the actual data is proportion format (between 0 and 1). Therefore the model is better fit.
 
+# Forecasting
+- We get best parameter from training data before. We use these best parameter for forecasting model.
+- Forecast proportion of West Java society staying put at home in the next 2 weeks 
+(from 1 January 2021 to 14 January 2021). 
+
+![jds5](https://user-images.githubusercontent.com/75175081/131247638-9af3ac99-349e-452b-b691-317977d45c58.png)
+
+- Plot the forecasted data 
+
+![jds6](https://user-images.githubusercontent.com/75175081/131247671-619aff08-036d-411d-a7f7-bd5493530363.png)
+
+# Recommendation
+
+Average of proportion staying put at home in the next 2 weeks is around 0.2. It shows that the proportion of staying put at home is low. It means that mobility of society is high. The government needs to take some planning to anticipate some possible happen.
+- The government needs to implement strict health protocols to reduce the spread of COVID-19.
+- The government needs to prepare the availability of hospitals.
+- The government needs to prepare the availability of medicines.
+- The government needs to prepare social compensation for society.
+
+
 
 
