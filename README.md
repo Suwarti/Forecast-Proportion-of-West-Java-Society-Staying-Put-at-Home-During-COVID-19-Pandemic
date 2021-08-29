@@ -54,5 +54,9 @@ by Suwarti
   * baseline_name: When baseline movement was calculated pre-COVID-19
   * baseline_type: How baseline movement was calculated pre-COVID-19
 
+# Data preparation
+- Code Used:
+  * Python Version: 3.7.6
+  * Packages: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Statsmodels, Itertools, and Fbprophet.
 
 
