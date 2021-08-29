@@ -75,5 +75,29 @@ From the graph, we can see that the data is non-linear trends. And there is an e
 
 - Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.
 - From exploratory data analysis, we can see that the data is non-linear trends. Therefore we choose the Prophet model.
+- Split the data into train and tests sets with a test size of 20%.
+- I tried Prophet model.
+- First I use default parameter of the prophet model.
+- And then I test crossvalidation using parameter:
+  * Initial= 100 days
+From exploratory data analysis , we can see that there is an extreme pattern in the first 3 months of the data. Therefore I choose initial= 100 days.
+  * Horizon = 32 days
+From references that I read, horizon is usually one third from the initial. Therefore I choose initial= 32 days.
+  * Period= 16 days.
+From references that I read, period is usually one half from the horizon. Therefore I choose period = 16 days.
+- And then I do hyperparameter tuning using parameter RMSE, horizon, and some parameter default from prophet model.
+- From hyperparameter tuning, we can get best parameter for our model.
+- Best  parameter based on the lowest RMSE.
+
+# Evaluating Model: Prophet
+
+- Root Mean Squared Error (RMSE) represents the sample standard deviation of the differences between predicted values and observed values
+- RMSE is one of metric for evaluating time series forecasting algorithms.  
+- Lower values of RMSE indicate better fit.
+
+![jds4](https://user-images.githubusercontent.com/75175081/131247549-a45a28fe-d22f-457b-a48a-ab81a3d70534.png)
+
+RMSE of our model is 0.02. Meanwhile the actual data is proportion format (between 0 and 1). Therefore the model is better fit.
+
 
 
